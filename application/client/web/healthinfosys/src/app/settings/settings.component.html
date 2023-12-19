@@ -5,6 +5,9 @@
         <li nz-menu-item (click)="setTitle('Tickets')">Tickets</li>
         <li nz-menu-item (click)="setTitle('Types')">Types</li>
         <li nz-menu-item (click)="setTitle('Headerblk')">Headerblk</li>
+        <li nz-menu-item (click)="setTitle('Categoryblk')">Categoryblk</li>
+        <li nz-menu-item (click)="setTitle('Detailblk')">Detailblk</li>
+        <li nz-menu-item (click)="setTitle('Mirror')">Mirror</li>
       </ul>
     </nz-sider>
     <nz-content class="inner-content">
@@ -12,5 +15,8 @@
         <app-tickets *ngIf="title === 'Tickets'"></app-tickets>
         <app-types *ngIf="title === 'Types'"></app-types>
         <app-headerblk *ngIf="title === 'Headerblk'"></app-headerblk>
+        <app-categoryblk *ngIf="title === 'Categoryblk'"></app-categoryblk>
+        <app-detailblk *ngIf="title === 'Detailblk'"></app-detailblk>
+        <app-mirror *ngIf="title === 'Mirror'"></app-mirror>
     </nz-content>
   </nz-layout>

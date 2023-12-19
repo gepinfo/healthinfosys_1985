@@ -7,6 +7,9 @@ const routes: Routes = [
   { path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) },
   { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule) },
 { path : 'headerblk', loadChildren: () => import('./headerblk/headerblk.module').then(m => m.HeaderblkModule) } , 
+{ path : 'detailblk', loadChildren: () => import('./detailblk/detailblk.module').then(m => m.DetailblkModule) } , 
+{ path : 'categoryblk', loadChildren: () => import('./categoryblk/categoryblk.module').then(m => m.CategoryblkModule) } , 
+{ path : 'mirror', loadChildren: () => import('./mirror/mirror.module').then(m => m.MirrorModule) } , 
 ];
 
 @NgModule({

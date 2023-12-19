@@ -157,6 +157,9 @@ services:
       - systemcredentialmanager
       - systementry
       - headerblk
+      - detailblk
+      - categoryblk
+      - mirror
 
     logging:
       driver: "fluentd"
@@ -225,7 +228,7 @@ services:
     image: systementry-1985
     container_name: systementry-1985
     ports: 
-      - 8014:8014
+      - 8016:8016
     env_file: .env
     depends_on:
       - mongo
@@ -244,7 +247,64 @@ services:
     image: headerblk-1985
     container_name: headerblk-1985
     ports: 
-      - 8015:8015
+      - 8017:8017
+    env_file: .env
+    depends_on:
+      - mongo
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: 0.0.0.0:24224
+        fluentd-async-connect: "true"
+        tag: fluent
+    mem_limit: 300m
+    mem_reservation: 150m
+    cpus: 0.2
+
+  detailblk: 
+    build: ../../../application/services/custom_services/detailblk
+    image: detailblk-1985
+    container_name: detailblk-1985
+    ports: 
+      - 8018:8018
+    env_file: .env
+    depends_on:
+      - mongo
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: 0.0.0.0:24224
+        fluentd-async-connect: "true"
+        tag: fluent
+    mem_limit: 300m
+    mem_reservation: 150m
+    cpus: 0.2
+
+  categoryblk: 
+    build: ../../../application/services/custom_services/categoryblk
+    image: categoryblk-1985
+    container_name: categoryblk-1985
+    ports: 
+      - 8019:8019
+    env_file: .env
+    depends_on:
+      - mongo
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: 0.0.0.0:24224
+        fluentd-async-connect: "true"
+        tag: fluent
+    mem_limit: 300m
+    mem_reservation: 150m
+    cpus: 0.2
+
+  mirror: 
+    build: ../../../application/services/custom_services/mirror
+    image: mirror-1985
+    container_name: mirror-1985
+    ports: 
+      - 8020:8020
     env_file: .env
     depends_on:
       - mongo

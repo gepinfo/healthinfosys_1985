@@ -12,9 +12,141 @@ module.exports = {
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": "8015",
+                    "containerPort": "8017",
                     "protocol": "tcp",
-                    "hostPort": "8015"
+                    "hostPort": "8017"
+                }
+            ],
+            "environmentFiles": null,
+            "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@healthinfosys.local:27017/healthinfosys_1985?authSource=admin"},{"name":"MONGO_DOMAIN","value":"healthinfosys.local"},{"name":"CAMUNDAPOD_URL","value":"http://healthinfosys.local:8080"},{"name":"SECURITYURL","value":"http://healthinfosys.local:8003"},{"name":"AUTHPROXYURL","value":"http://healthinfosys.local:8001"},{"name":"ADMINURL","value":"http://healthinfosys.local:8004"},{"name":"CAMUNDAURL","value":"http://healthinfosys.local:8002"},{"name":"GCAMURL","value":"http://healthinfosys.local:8007"},{"name":"APIGATEWAY","value":"http://healthinfosys.local:8000"}],
+            "secrets": null,
+            "mountPoints": [
+                {
+                  "readOnly": null,
+                  "containerPath": "/path/to/container",
+                  "sourceVolume": "healthinfosys"
+                }
+              ],
+            "volumesFrom": null,
+            "hostname": null,
+            "user": null,
+            "workingDirectory": null,
+            "extraHosts": null,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/healthinfosys",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs",
+                    "awslogs-create-group": "true"
+                }
+            },
+            "ulimits": null,
+            "dockerLabels": null,
+            "dependsOn": null,
+            "repositoryCredentials": {
+                "credentialsParameter": ""
+            }
+        },          
+        {
+            "name": "detailblk-1985",
+            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthinfosys-1985-detailblk:latest`,
+            "memoryReservation": "300",
+            "resourceRequirements": null,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": "8018",
+                    "protocol": "tcp",
+                    "hostPort": "8018"
+                }
+            ],
+            "environmentFiles": null,
+            "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@healthinfosys.local:27017/healthinfosys_1985?authSource=admin"},{"name":"MONGO_DOMAIN","value":"healthinfosys.local"},{"name":"CAMUNDAPOD_URL","value":"http://healthinfosys.local:8080"},{"name":"SECURITYURL","value":"http://healthinfosys.local:8003"},{"name":"AUTHPROXYURL","value":"http://healthinfosys.local:8001"},{"name":"ADMINURL","value":"http://healthinfosys.local:8004"},{"name":"CAMUNDAURL","value":"http://healthinfosys.local:8002"},{"name":"GCAMURL","value":"http://healthinfosys.local:8007"},{"name":"APIGATEWAY","value":"http://healthinfosys.local:8000"}],
+            "secrets": null,
+            "mountPoints": [
+                {
+                  "readOnly": null,
+                  "containerPath": "/path/to/container",
+                  "sourceVolume": "healthinfosys"
+                }
+              ],
+            "volumesFrom": null,
+            "hostname": null,
+            "user": null,
+            "workingDirectory": null,
+            "extraHosts": null,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/healthinfosys",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs",
+                    "awslogs-create-group": "true"
+                }
+            },
+            "ulimits": null,
+            "dockerLabels": null,
+            "dependsOn": null,
+            "repositoryCredentials": {
+                "credentialsParameter": ""
+            }
+        },          
+        {
+            "name": "categoryblk-1985",
+            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthinfosys-1985-categoryblk:latest`,
+            "memoryReservation": "300",
+            "resourceRequirements": null,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": "8019",
+                    "protocol": "tcp",
+                    "hostPort": "8019"
+                }
+            ],
+            "environmentFiles": null,
+            "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@healthinfosys.local:27017/healthinfosys_1985?authSource=admin"},{"name":"MONGO_DOMAIN","value":"healthinfosys.local"},{"name":"CAMUNDAPOD_URL","value":"http://healthinfosys.local:8080"},{"name":"SECURITYURL","value":"http://healthinfosys.local:8003"},{"name":"AUTHPROXYURL","value":"http://healthinfosys.local:8001"},{"name":"ADMINURL","value":"http://healthinfosys.local:8004"},{"name":"CAMUNDAURL","value":"http://healthinfosys.local:8002"},{"name":"GCAMURL","value":"http://healthinfosys.local:8007"},{"name":"APIGATEWAY","value":"http://healthinfosys.local:8000"}],
+            "secrets": null,
+            "mountPoints": [
+                {
+                  "readOnly": null,
+                  "containerPath": "/path/to/container",
+                  "sourceVolume": "healthinfosys"
+                }
+              ],
+            "volumesFrom": null,
+            "hostname": null,
+            "user": null,
+            "workingDirectory": null,
+            "extraHosts": null,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/healthinfosys",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs",
+                    "awslogs-create-group": "true"
+                }
+            },
+            "ulimits": null,
+            "dockerLabels": null,
+            "dependsOn": null,
+            "repositoryCredentials": {
+                "credentialsParameter": ""
+            }
+        },          
+        {
+            "name": "mirror-1985",
+            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthinfosys-1985-mirror:latest`,
+            "memoryReservation": "300",
+            "resourceRequirements": null,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": "8020",
+                    "protocol": "tcp",
+                    "hostPort": "8020"
                 }
             ],
             "environmentFiles": null,

@@ -6,3 +6,6 @@ export * from "./CamundaController";
 export * from "./systemcredentialmanagerController";
 export * from "./UserController";
 export * from "./headerblkController";
+export * from "./detailblkController";
+export * from "./categoryblkController";
+export * from "./mirrorController";

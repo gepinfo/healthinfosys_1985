@@ -28,5 +28,17 @@ spec:
     port: {{ .Values.service.headerblk.port }}
     targetPort: {{ .Values.service.headerblk.targetPort }}
 
+  - name: {{ .Values.service.detailblk.name }}
+    port: {{ .Values.service.detailblk.port }}
+    targetPort: {{ .Values.service.detailblk.targetPort }}
+
+  - name: {{ .Values.service.categoryblk.name }}
+    port: {{ .Values.service.categoryblk.port }}
+    targetPort: {{ .Values.service.categoryblk.targetPort }}
+
+  - name: {{ .Values.service.mirror.name }}
+    port: {{ .Values.service.mirror.port }}
+    targetPort: {{ .Values.service.mirror.targetPort }}
+
   selector:
     name: {{ .Values.app.prefix }}-app

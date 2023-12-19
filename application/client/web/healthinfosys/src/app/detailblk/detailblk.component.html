@@ -1,0 +1,171 @@
+<nz-modal [(nzVisible)]="isVisibleCreate" [nzTitle]="'Create User'" [nzContent]="modalContentCreate" [nzFooter]="modalFooterCreate">
+      <ng-template #modalTitle>Create User</ng-template>
+      <ng-template #modalContentCreate>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >unitno</nz-form-label>
+        <input nz-input placeholder="Enter unitno" [(ngModel)]="detailblk.unitno" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndproductcode</nz-form-label>
+        <input nz-input placeholder="Enter ndproductcode" [(ngModel)]="detailblk.ndproductcode" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >bloodgroup</nz-form-label>
+        <input nz-input placeholder="Enter bloodgroup" [(ngModel)]="detailblk.bloodgroup" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >currentvolume</nz-form-label>
+        <input nz-input placeholder="Enter currentvolume" [(ngModel)]="detailblk.currentvolume" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >volumeunits</nz-form-label>
+        <input nz-input placeholder="Enter volumeunits" [(ngModel)]="detailblk.volumeunits" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >rhesuscode</nz-form-label>
+        <input nz-input placeholder="Enter rhesuscode" [(ngModel)]="detailblk.rhesuscode" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndexpirydate</nz-form-label>
+        <input nz-input placeholder="Enter ndexpirydate" [(ngModel)]="detailblk.ndexpirydate" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >unitstatus</nz-form-label>
+        <input nz-input placeholder="Enter unitstatus" [(ngModel)]="detailblk.unitstatus" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >decodedunitstatus</nz-form-label>
+        <input nz-input placeholder="Enter decodedunitstatus" [(ngModel)]="detailblk.decodedunitstatus" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndreserveddate1</nz-form-label>
+        <input nz-input placeholder="Enter ndreserveddate1" [(ngModel)]="detailblk.ndreserveddate1" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >storageloccode</nz-form-label>
+        <input nz-input placeholder="Enter storageloccode" [(ngModel)]="detailblk.storageloccode" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndsimunit</nz-form-label>
+        <input nz-input placeholder="Enter ndsimunit" [(ngModel)]="detailblk.ndsimunit" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndselectunit</nz-form-label>
+        <input nz-input placeholder="Enter ndselectunit" [(ngModel)]="detailblk.ndselectunit" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndautologunit</nz-form-label>
+        <input nz-input placeholder="Enter ndautologunit" [(ngModel)]="detailblk.ndautologunit" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >nddirectedunit</nz-form-label>
+        <input nz-input placeholder="Enter nddirectedunit" [(ngModel)]="detailblk.nddirectedunit" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+      </ng-template>
+
+      <ng-template #modalFooterCreate>
+        <button nz-button nzType="default" (click)="handleCancel()">Cancel</button>
+        <button nz-button nzType="primary" (click)="Create()" >Create</button>
+      </ng-template>
+</nz-modal>
+
+<nz-modal [(nzVisible)]="isVisibleUpdate" [nzTitle]="'Update User'" [nzContent]="modalContentUpdate" [nzFooter]="modalFooterUpdate">
+  <ng-template #modalTitle>Update User</ng-template>
+  <ng-template #modalContentUpdate>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >unitno</nz-form-label>
+    <input nz-input placeholder="Enter unitno" [(ngModel)]="detailblk.unitno" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndproductcode</nz-form-label>
+    <input nz-input placeholder="Enter ndproductcode" [(ngModel)]="detailblk.ndproductcode" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >bloodgroup</nz-form-label>
+    <input nz-input placeholder="Enter bloodgroup" [(ngModel)]="detailblk.bloodgroup" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >currentvolume</nz-form-label>
+    <input nz-input placeholder="Enter currentvolume" [(ngModel)]="detailblk.currentvolume" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >volumeunits</nz-form-label>
+    <input nz-input placeholder="Enter volumeunits" [(ngModel)]="detailblk.volumeunits" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >rhesuscode</nz-form-label>
+    <input nz-input placeholder="Enter rhesuscode" [(ngModel)]="detailblk.rhesuscode" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndexpirydate</nz-form-label>
+    <input nz-input placeholder="Enter ndexpirydate" [(ngModel)]="detailblk.ndexpirydate" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >unitstatus</nz-form-label>
+    <input nz-input placeholder="Enter unitstatus" [(ngModel)]="detailblk.unitstatus" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >decodedunitstatus</nz-form-label>
+    <input nz-input placeholder="Enter decodedunitstatus" [(ngModel)]="detailblk.decodedunitstatus" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndreserveddate1</nz-form-label>
+    <input nz-input placeholder="Enter ndreserveddate1" [(ngModel)]="detailblk.ndreserveddate1" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >storageloccode</nz-form-label>
+    <input nz-input placeholder="Enter storageloccode" [(ngModel)]="detailblk.storageloccode" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndsimunit</nz-form-label>
+    <input nz-input placeholder="Enter ndsimunit" [(ngModel)]="detailblk.ndsimunit" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndselectunit</nz-form-label>
+    <input nz-input placeholder="Enter ndselectunit" [(ngModel)]="detailblk.ndselectunit" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndautologunit</nz-form-label>
+    <input nz-input placeholder="Enter ndautologunit" [(ngModel)]="detailblk.ndautologunit" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >nddirectedunit</nz-form-label>
+    <input nz-input placeholder="Enter nddirectedunit" [(ngModel)]="detailblk.nddirectedunit" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+  </ng-template>
+
+  <ng-template #modalFooterUpdate>
+    <button nz-button nzType="default" (click)="handleCancel()">Cancel</button>
+    <button nz-button nzType="primary" (click)="Update()" >Update</button>
+  </ng-template>
+</nz-modal>
+
+
+<nz-input-group [nzSuffix]="suffixIconSearch" style="width: auto;">
+    <input type="text" nz-input placeholder="search..." [(ngModel)]="searchtickets" [ngModelOptions]="{standalone: true}" class="form-control" (ngModelChange)="search($event)"/>
+</nz-input-group>
+<ng-template #suffixIconSearch>
+    <span nz-icon nzType="search" ></span>
+</ng-template>
+
+<button nz-button style="float: right; background-color: #2c2cbb; color: #fff;" (click)="showModal()">
+    <span nz-icon nzType="file-add" nzTheme="outline"></span>
+    New User
+</button>
+
+<div nz-row style="margin: 25px 0;">
+    <div nz-col nzSpan="24">
+        <nz-table #filterTable [nzData]="listOfData" nzTableLayout="fixed">
+            <thead>
+              <tr>
+                <th nzColumnKey="unitno" [nzSortFn]="true">unitno</th>
+                <th nzColumnKey="ndproductcode" [nzSortFn]="true">ndproductcode</th>
+                <th nzColumnKey="bloodgroup" [nzSortFn]="true">bloodgroup</th>
+                <th nzColumnKey="currentvolume" [nzSortFn]="true">currentvolume</th>
+                <th nzColumnKey="volumeunits" [nzSortFn]="true">volumeunits</th>
+                <th nzColumnKey="rhesuscode" [nzSortFn]="true">rhesuscode</th>
+                <th nzColumnKey="ndexpirydate" [nzSortFn]="true">ndexpirydate</th>
+                <th nzColumnKey="unitstatus" [nzSortFn]="true">unitstatus</th>
+                <th nzColumnKey="decodedunitstatus" [nzSortFn]="true">decodedunitstatus</th>
+                <th nzColumnKey="ndreserveddate1" [nzSortFn]="true">ndreserveddate1</th>
+                <th nzColumnKey="storageloccode" [nzSortFn]="true">storageloccode</th>
+                <th nzColumnKey="ndsimunit" [nzSortFn]="true">ndsimunit</th>
+                <th nzColumnKey="ndselectunit" [nzSortFn]="true">ndselectunit</th>
+                <th nzColumnKey="ndautologunit" [nzSortFn]="true">ndautologunit</th>
+                <th nzColumnKey="nddirectedunit" [nzSortFn]="true">nddirectedunit</th>
+                <th nzColumnKey="status" [nzFilters]="filterStatus" [nzFilterFn]="true">Status</th>
+                <th nzWidth="100px"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of filterTable.data">
+                <td>{{ data.unitno }}</td>
+                <td>{{ data.ndproductcode }}</td>
+                <td>{{ data.bloodgroup }}</td>
+                <td>{{ data.currentvolume }}</td>
+                <td>{{ data.volumeunits }}</td>
+                <td>{{ data.rhesuscode }}</td>
+                <td>{{ data.ndexpirydate }}</td>
+                <td>{{ data.unitstatus }}</td>
+                <td>{{ data.decodedunitstatus }}</td>
+                <td>{{ data.ndreserveddate1 }}</td>
+                <td>{{ data.storageloccode }}</td>
+                <td>{{ data.ndsimunit }}</td>
+                <td>{{ data.ndselectunit }}</td>
+                <td>{{ data.ndautologunit }}</td>
+                <td>{{ data.nddirectedunit }}</td>
+                <td>
+                  <nz-switch [ngModel]="true" nzCheckedChildren="Active" nzUnCheckedChildren="In-Active"></nz-switch>
+                </td>
+                <td>
+                    <a nz-dropdown [nzDropdownMenu]="menu"  style="color: gray; font-size: 15px;">
+                        ...
+                        <span nz-icon nzType="down"></span>
+                    </a>
+                    <nz-dropdown-menu #menu="nzDropdownMenu">
+                        <ul nz-menu>
+                          <li nz-menu-item (click)="getUpdateById(data)">Edit</li>
+                          <li nz-menu-item >
+                            <a
+                              nz-popconfirm
+                              nzPopconfirmTitle="Are you sure delete this task?"
+                              nzPopconfirmPlacement="bottom"
+                              (nzOnConfirm)="confirmDelete(data)"
+                              (nzOnCancel)="cancel()"
+                            >
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                    </nz-dropdown-menu>
+                </td>
+              </tr>
+            </tbody>
+        </nz-table>
+    </div>
+</div>
+
+
+
+
+

@@ -6,3 +6,6 @@ export const CAMUNDAURL = process.env.CAMUNDAURL;
 export const SYSTEMCREDENTIALMANAGERURL = process.env.SYSTEMCREDENTIALMANAGERURL;
 export const SYSTEMENTRYURL = process.env.SYSTEMENTRYURL;
 export const HEADERBLKURL = process.env.HEADERBLKURL;
+export const DETAILBLKURL = process.env.DETAILBLKURL;
+export const CATEGORYBLKURL = process.env.CATEGORYBLKURL;
+export const MIRRORURL = process.env.MIRRORURL;

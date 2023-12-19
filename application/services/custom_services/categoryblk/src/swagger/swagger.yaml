@@ -1,0 +1,202 @@
+---
+openapi: 3.0.0
+info:
+   version: 1.3.0
+   title: healthinfosys open api specification
+   description: categoryblk API
+   termsOfService: http://api_url/terms/
+   contact:
+      name: ContactName
+      email: hello@wolox.co
+      url: https://www.wolox.com.ar/
+   license:
+      name: Apache 2.0
+      url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+   - url: http://localhost:8019
+     description: categoryblk
+tags:
+- name: categoryblk
+paths:
+   "/categoryblk/{id}":
+      delete:
+         tags:
+         -  categoryblk
+         description: GpDelete
+         parameters:
+         -  in: "path"
+            description: GpDelete
+            name: id
+            required: true
+            schema:
+               type: "string"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+      get:
+         tags:
+         -  categoryblk
+         description: GpGetEntityById
+         parameters:
+         -  in: "path"
+            description: GpGetEntityById
+            name: id
+            required: true
+            schema:
+               type: "string"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/categoryblk/get/search":
+      get:
+         tags:
+         -  categoryblk
+         description: GpSearch
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/categoryblk/get/update":
+      put:
+         tags:
+         -  categoryblk
+         description: GpSearchForUpdate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/categoryblk"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/categoryblk":
+      put:
+         tags:
+         -  categoryblk
+         description: GpUpdate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/categoryblk"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+      get:
+         tags:
+         -  categoryblk
+         description: GpGetAllValues
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+      post:
+         tags:
+         -  categoryblk
+         description: GpCreate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/categoryblk"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/categoryblk/userid/created_by":
+      get:
+         tags:
+         -  categoryblk
+         description: GpGetNounCreatedBy
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+components:
+   schemas:
+      categoryblk:
+         type: object
+         properties:
+            categorycode:
+               type: "string"
+               description: Description
+            productcode:
+               type: "string"
+               description: Description
+            remarks:
+               type: "string"
+               description: Description
+            ndproductdesc:
+               type: "string"
+               description: Description
+            volume:
+               type: "string"
+               description: Description
+            volumeunit:
+               type: "string"
+               description: Description
+            categoryrequested:
+               type: "number"
+               description: Description
+            ndcategoryreqddate:
+               type: "string"
+               description: Description
+            ndtransfuseexpectdatetime:
+               type: "string"
+               description: Description
+            ndautologunit:
+               type: "string"
+               description: Description
+            nddirectedunit:
+               type: "string"
+               description: Description
+            ndaltproduct:
+               type: "string"
+               description: Description
+            ndgetunitsfromothfacility:
+               type: "string"
+               description: Description

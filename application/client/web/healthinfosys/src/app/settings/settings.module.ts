@@ -17,6 +17,9 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
 import { TicketsComponent } from './tickets/tickets.component';
 import { TypesComponent } from './types/types.component';
 import { HeaderblkComponent } from '../headerblk/headerblk.component';
+import { CategoryblkComponent } from '../categoryblk/categoryblk.component';
+import { DetailblkComponent } from '../detailblk/detailblk.component';
+import { MirrorComponent } from '../mirror/mirror.component';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzFormModule } from 'ng-zorro-antd/form';
 @NgModule({
@@ -27,6 +30,9 @@ import { NzFormModule } from 'ng-zorro-antd/form';
     TicketsComponent,
     TypesComponent,
     HeaderblkComponent,
+    CategoryblkComponent,
+    DetailblkComponent,
+    MirrorComponent,
 
   ],
   imports: [

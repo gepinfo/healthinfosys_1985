@@ -57,14 +57,32 @@ service:
   systementry: 
     name: systementry
     type: NodePort
-    port: 8014
-    targetPort: 8014
+    port: 8016
+    targetPort: 8016
 
   headerblk: 
     name: headerblk
     type: NodePort
-    port: 8015
-    targetPort: 8015
+    port: 8017
+    targetPort: 8017
+
+  detailblk: 
+    name: detailblk
+    type: NodePort
+    port: 8018
+    targetPort: 8018
+
+  categoryblk: 
+    name: categoryblk
+    type: NodePort
+    port: 8019
+    targetPort: 8019
+
+  mirror: 
+    name: mirror
+    type: NodePort
+    port: 8020
+    targetPort: 8020
 
 
 deployment:
@@ -98,6 +116,18 @@ deployment:
   headerblk: 
     name: headerblk
     image: geppettotest/healthinfosys-headerblk:1.0
+
+  detailblk: 
+    name: detailblk
+    image: geppettotest/healthinfosys-detailblk:1.0
+
+  categoryblk: 
+    name: categoryblk
+    image: geppettotest/healthinfosys-categoryblk:1.0
+
+  mirror: 
+    name: mirror
+    image: geppettotest/healthinfosys-mirror:1.0
 
   camundapod:
      name: camundapod
