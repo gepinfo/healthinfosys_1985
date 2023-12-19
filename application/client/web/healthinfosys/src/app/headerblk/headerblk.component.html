@@ -1,0 +1,213 @@
+<nz-modal [(nzVisible)]="isVisibleCreate" [nzTitle]="'Create User'" [nzContent]="modalContentCreate" [nzFooter]="modalFooterCreate">
+      <ng-template #modalTitle>Create User</ng-template>
+      <ng-template #modalContentCreate>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >specimenno</nz-form-label>
+        <input nz-input placeholder="Enter specimenno" [(ngModel)]="headerblk.specimenno" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >specimennolv</nz-form-label>
+        <input nz-input placeholder="Enter specimennolv" [(ngModel)]="headerblk.specimennolv" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >patientid</nz-form-label>
+        <input nz-input placeholder="Enter patientid" [(ngModel)]="headerblk.patientid" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >shortname</nz-form-label>
+        <input nz-input placeholder="Enter shortname" [(ngModel)]="headerblk.shortname" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >commentcode</nz-form-label>
+        <input nz-input placeholder="Enter commentcode" [(ngModel)]="headerblk.commentcode" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >bloodgroup</nz-form-label>
+        <input nz-input placeholder="Enter bloodgroup" [(ngModel)]="headerblk.bloodgroup" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >bloodgrouplv</nz-form-label>
+        <input nz-input placeholder="Enter bloodgrouplv" [(ngModel)]="headerblk.bloodgrouplv" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >rhesuscode</nz-form-label>
+        <input nz-input placeholder="Enter rhesuscode" [(ngModel)]="headerblk.rhesuscode" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >rhesuscodelv</nz-form-label>
+        <input nz-input placeholder="Enter rhesuscodelv" [(ngModel)]="headerblk.rhesuscodelv" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >commentcodelv</nz-form-label>
+        <input nz-input placeholder="Enter commentcodelv" [(ngModel)]="headerblk.commentcodelv" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >comments</nz-form-label>
+        <input nz-input placeholder="Enter comments" [(ngModel)]="headerblk.comments" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndpriorityind</nz-form-label>
+        <input nz-input placeholder="Enter ndpriorityind" [(ngModel)]="headerblk.ndpriorityind" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndsex</nz-form-label>
+        <input nz-input placeholder="Enter ndsex" [(ngModel)]="headerblk.ndsex" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndageyrs</nz-form-label>
+        <input nz-input placeholder="Enter ndageyrs" [(ngModel)]="headerblk.ndageyrs" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndagemths</nz-form-label>
+        <input nz-input placeholder="Enter ndagemths" [(ngModel)]="headerblk.ndagemths" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndagedays</nz-form-label>
+        <input nz-input placeholder="Enter ndagedays" [(ngModel)]="headerblk.ndagedays" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >reprint</nz-form-label>
+        <input nz-input placeholder="Enter reprint" [(ngModel)]="headerblk.reprint" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndspecregddatetime</nz-form-label>
+        <input nz-input placeholder="Enter ndspecregddatetime" [(ngModel)]="headerblk.ndspecregddatetime" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >print</nz-form-label>
+        <input nz-input placeholder="Enter print" [(ngModel)]="headerblk.print" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >pbreleaseblood</nz-form-label>
+        <input nz-input placeholder="Enter pbreleaseblood" [(ngModel)]="headerblk.pbreleaseblood" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >pbbbcomm</nz-form-label>
+        <input nz-input placeholder="Enter pbbbcomm" [(ngModel)]="headerblk.pbbbcomm" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+        <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >pbmigtranshist</nz-form-label>
+        <input nz-input placeholder="Enter pbmigtranshist" [(ngModel)]="headerblk.pbmigtranshist" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+      </ng-template>
+
+      <ng-template #modalFooterCreate>
+        <button nz-button nzType="default" (click)="handleCancel()">Cancel</button>
+        <button nz-button nzType="primary" (click)="Create()" >Create</button>
+      </ng-template>
+</nz-modal>
+
+<nz-modal [(nzVisible)]="isVisibleUpdate" [nzTitle]="'Update User'" [nzContent]="modalContentUpdate" [nzFooter]="modalFooterUpdate">
+  <ng-template #modalTitle>Update User</ng-template>
+  <ng-template #modalContentUpdate>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >specimenno</nz-form-label>
+    <input nz-input placeholder="Enter specimenno" [(ngModel)]="headerblk.specimenno" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >specimennolv</nz-form-label>
+    <input nz-input placeholder="Enter specimennolv" [(ngModel)]="headerblk.specimennolv" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >patientid</nz-form-label>
+    <input nz-input placeholder="Enter patientid" [(ngModel)]="headerblk.patientid" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >shortname</nz-form-label>
+    <input nz-input placeholder="Enter shortname" [(ngModel)]="headerblk.shortname" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >commentcode</nz-form-label>
+    <input nz-input placeholder="Enter commentcode" [(ngModel)]="headerblk.commentcode" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >bloodgroup</nz-form-label>
+    <input nz-input placeholder="Enter bloodgroup" [(ngModel)]="headerblk.bloodgroup" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >bloodgrouplv</nz-form-label>
+    <input nz-input placeholder="Enter bloodgrouplv" [(ngModel)]="headerblk.bloodgrouplv" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >rhesuscode</nz-form-label>
+    <input nz-input placeholder="Enter rhesuscode" [(ngModel)]="headerblk.rhesuscode" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >rhesuscodelv</nz-form-label>
+    <input nz-input placeholder="Enter rhesuscodelv" [(ngModel)]="headerblk.rhesuscodelv" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >commentcodelv</nz-form-label>
+    <input nz-input placeholder="Enter commentcodelv" [(ngModel)]="headerblk.commentcodelv" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >comments</nz-form-label>
+    <input nz-input placeholder="Enter comments" [(ngModel)]="headerblk.comments" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndpriorityind</nz-form-label>
+    <input nz-input placeholder="Enter ndpriorityind" [(ngModel)]="headerblk.ndpriorityind" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndsex</nz-form-label>
+    <input nz-input placeholder="Enter ndsex" [(ngModel)]="headerblk.ndsex" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndageyrs</nz-form-label>
+    <input nz-input placeholder="Enter ndageyrs" [(ngModel)]="headerblk.ndageyrs" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndagemths</nz-form-label>
+    <input nz-input placeholder="Enter ndagemths" [(ngModel)]="headerblk.ndagemths" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndagedays</nz-form-label>
+    <input nz-input placeholder="Enter ndagedays" [(ngModel)]="headerblk.ndagedays" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >reprint</nz-form-label>
+    <input nz-input placeholder="Enter reprint" [(ngModel)]="headerblk.reprint" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >ndspecregddatetime</nz-form-label>
+    <input nz-input placeholder="Enter ndspecregddatetime" [(ngModel)]="headerblk.ndspecregddatetime" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >print</nz-form-label>
+    <input nz-input placeholder="Enter print" [(ngModel)]="headerblk.print" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >pbreleaseblood</nz-form-label>
+    <input nz-input placeholder="Enter pbreleaseblood" [(ngModel)]="headerblk.pbreleaseblood" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >pbbbcomm</nz-form-label>
+    <input nz-input placeholder="Enter pbbbcomm" [(ngModel)]="headerblk.pbbbcomm" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+    <nz-form-label id="template-iqrk" class="label"  style="margin-top: 20px;" >pbmigtranshist</nz-form-label>
+    <input nz-input placeholder="Enter pbmigtranshist" [(ngModel)]="headerblk.pbmigtranshist" [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "/>
+  </ng-template>
+
+  <ng-template #modalFooterUpdate>
+    <button nz-button nzType="default" (click)="handleCancel()">Cancel</button>
+    <button nz-button nzType="primary" (click)="Update()" >Update</button>
+  </ng-template>
+</nz-modal>
+
+
+<nz-input-group [nzSuffix]="suffixIconSearch" style="width: auto;">
+    <input type="text" nz-input placeholder="search..." [(ngModel)]="searchtickets" [ngModelOptions]="{standalone: true}" class="form-control" (ngModelChange)="search($event)"/>
+</nz-input-group>
+<ng-template #suffixIconSearch>
+    <span nz-icon nzType="search" ></span>
+</ng-template>
+
+<button nz-button style="float: right; background-color: #2c2cbb; color: #fff;" (click)="showModal()">
+    <span nz-icon nzType="file-add" nzTheme="outline"></span>
+    New User
+</button>
+
+<div nz-row style="margin: 25px 0;">
+    <div nz-col nzSpan="24">
+        <nz-table #filterTable [nzData]="listOfData" nzTableLayout="fixed">
+            <thead>
+              <tr>
+                <th nzColumnKey="specimenno" [nzSortFn]="true">specimenno</th>
+                <th nzColumnKey="specimennolv" [nzSortFn]="true">specimennolv</th>
+                <th nzColumnKey="patientid" [nzSortFn]="true">patientid</th>
+                <th nzColumnKey="shortname" [nzSortFn]="true">shortname</th>
+                <th nzColumnKey="commentcode" [nzSortFn]="true">commentcode</th>
+                <th nzColumnKey="bloodgroup" [nzSortFn]="true">bloodgroup</th>
+                <th nzColumnKey="bloodgrouplv" [nzSortFn]="true">bloodgrouplv</th>
+                <th nzColumnKey="rhesuscode" [nzSortFn]="true">rhesuscode</th>
+                <th nzColumnKey="rhesuscodelv" [nzSortFn]="true">rhesuscodelv</th>
+                <th nzColumnKey="commentcodelv" [nzSortFn]="true">commentcodelv</th>
+                <th nzColumnKey="comments" [nzSortFn]="true">comments</th>
+                <th nzColumnKey="ndpriorityind" [nzSortFn]="true">ndpriorityind</th>
+                <th nzColumnKey="ndsex" [nzSortFn]="true">ndsex</th>
+                <th nzColumnKey="ndageyrs" [nzSortFn]="true">ndageyrs</th>
+                <th nzColumnKey="ndagemths" [nzSortFn]="true">ndagemths</th>
+                <th nzColumnKey="ndagedays" [nzSortFn]="true">ndagedays</th>
+                <th nzColumnKey="reprint" [nzSortFn]="true">reprint</th>
+                <th nzColumnKey="ndspecregddatetime" [nzSortFn]="true">ndspecregddatetime</th>
+                <th nzColumnKey="print" [nzSortFn]="true">print</th>
+                <th nzColumnKey="pbreleaseblood" [nzSortFn]="true">pbreleaseblood</th>
+                <th nzColumnKey="pbbbcomm" [nzSortFn]="true">pbbbcomm</th>
+                <th nzColumnKey="pbmigtranshist" [nzSortFn]="true">pbmigtranshist</th>
+                <th nzColumnKey="status" [nzFilters]="filterStatus" [nzFilterFn]="true">Status</th>
+                <th nzWidth="100px"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of filterTable.data">
+                <td>{{ data.specimenno }}</td>
+                <td>{{ data.specimennolv }}</td>
+                <td>{{ data.patientid }}</td>
+                <td>{{ data.shortname }}</td>
+                <td>{{ data.commentcode }}</td>
+                <td>{{ data.bloodgroup }}</td>
+                <td>{{ data.bloodgrouplv }}</td>
+                <td>{{ data.rhesuscode }}</td>
+                <td>{{ data.rhesuscodelv }}</td>
+                <td>{{ data.commentcodelv }}</td>
+                <td>{{ data.comments }}</td>
+                <td>{{ data.ndpriorityind }}</td>
+                <td>{{ data.ndsex }}</td>
+                <td>{{ data.ndageyrs }}</td>
+                <td>{{ data.ndagemths }}</td>
+                <td>{{ data.ndagedays }}</td>
+                <td>{{ data.reprint }}</td>
+                <td>{{ data.ndspecregddatetime }}</td>
+                <td>{{ data.print }}</td>
+                <td>{{ data.pbreleaseblood }}</td>
+                <td>{{ data.pbbbcomm }}</td>
+                <td>{{ data.pbmigtranshist }}</td>
+                <td>
+                  <nz-switch [ngModel]="true" nzCheckedChildren="Active" nzUnCheckedChildren="In-Active"></nz-switch>
+                </td>
+                <td>
+                    <a nz-dropdown [nzDropdownMenu]="menu"  style="color: gray; font-size: 15px;">
+                        ...
+                        <span nz-icon nzType="down"></span>
+                    </a>
+                    <nz-dropdown-menu #menu="nzDropdownMenu">
+                        <ul nz-menu>
+                          <li nz-menu-item (click)="getUpdateById(data)">Edit</li>
+                          <li nz-menu-item >
+                            <a
+                              nz-popconfirm
+                              nzPopconfirmTitle="Are you sure delete this task?"
+                              nzPopconfirmPlacement="bottom"
+                              (nzOnConfirm)="confirmDelete(data)"
+                              (nzOnCancel)="cancel()"
+                            >
+                              Delete
+                            </a>
+                          </li>
+                        </ul>
+                    </nz-dropdown-menu>
+                </td>
+              </tr>
+            </tbody>
+        </nz-table>
+    </div>
+</div>
+
+
+
+
+

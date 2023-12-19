@@ -1,0 +1,229 @@
+---
+openapi: 3.0.0
+info:
+   version: 1.3.0
+   title: healthinfosys open api specification
+   description: headerblk API
+   termsOfService: http://api_url/terms/
+   contact:
+      name: ContactName
+      email: hello@wolox.co
+      url: https://www.wolox.com.ar/
+   license:
+      name: Apache 2.0
+      url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+   - url: http://localhost:8015
+     description: headerblk
+tags:
+- name: headerblk
+paths:
+   "/headerblk/{id}":
+      delete:
+         tags:
+         -  headerblk
+         description: GpDelete
+         parameters:
+         -  in: "path"
+            description: GpDelete
+            name: id
+            required: true
+            schema:
+               type: "string"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+      get:
+         tags:
+         -  headerblk
+         description: GpGetEntityById
+         parameters:
+         -  in: "path"
+            description: GpGetEntityById
+            name: id
+            required: true
+            schema:
+               type: "string"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/headerblk/get/search":
+      get:
+         tags:
+         -  headerblk
+         description: GpSearch
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/headerblk/get/update":
+      put:
+         tags:
+         -  headerblk
+         description: GpSearchForUpdate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/headerblk"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/headerblk":
+      put:
+         tags:
+         -  headerblk
+         description: GpUpdate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/headerblk"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+      get:
+         tags:
+         -  headerblk
+         description: GpGetAllValues
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+      post:
+         tags:
+         -  headerblk
+         description: GpCreate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/headerblk"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/headerblk/userid/created_by":
+      get:
+         tags:
+         -  headerblk
+         description: GpGetNounCreatedBy
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+components:
+   schemas:
+      headerblk:
+         type: object
+         properties:
+            specimenno:
+               type: "string"
+               description: Description
+            specimennolv:
+               type: "string"
+               description: Description
+            patientid:
+               type: "string"
+               description: Description
+            shortname:
+               type: "string"
+               description: Description
+            commentcode:
+               type: "string"
+               description: Description
+            bloodgroup:
+               type: "string"
+               description: Description
+            bloodgrouplv:
+               type: "string"
+               description: Description
+            rhesuscode:
+               type: "string"
+               description: Description
+            rhesuscodelv:
+               type: "string"
+               description: Description
+            commentcodelv:
+               type: "string"
+               description: Description
+            comments:
+               type: "string"
+               description: Description
+            ndpriorityind:
+               type: "string"
+               description: Description
+            ndsex:
+               type: "string"
+               description: Description
+            ndageyrs:
+               type: "number"
+               description: Description
+            ndagemths:
+               type: "number"
+               description: Description
+            ndagedays:
+               type: "number"
+               description: Description
+            reprint:
+               type: "string"
+               description: Description
+            ndspecregddatetime:
+               type: "string"
+               description: Description
+            print:
+               type: "string"
+               description: Description
+            pbreleaseblood:
+               type: "string"
+               description: Description
+            pbbbcomm:
+               type: "string"
+               description: Description
+            pbmigtranshist:
+               type: "string"
+               description: Description
